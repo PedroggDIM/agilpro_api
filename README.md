@@ -1,4 +1,4 @@
-[Logo](https://git.institutomilitar.com/PedroggDIM/agil/-/wikis/imagenes/Logo/LogoAgil.png)
+![Logo](https://git.institutomilitar.com/PedroggDIM/agil/-/wikis/imagenes/Logo/LogoAgil.png)
 
 # Descripción General
 
