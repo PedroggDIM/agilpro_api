@@ -14,6 +14,14 @@ AGIL también facilitará la generación de listas de incidencias no resueltas p
 
 Con todo ello se espera reunir la gestión de incidencias en un uńico lugar, simplificar el proceso que una unidad debe seguir al hacer frente a una incidencia, agilizar la gestión y aumentar la eficacia de la misma.
 
+## Valor aportado
+
+Gracias a la implantación de AGIL, se dispondrá de un sistema donde cualquier integrante de una unidad territorial podrá crear una incidencia relacionada con el servicio de limpieza en su propia unidad.
+AGIL dota a la Guardia Civil de un único espacio donde poder encontrar las diferentes incidencias que hayan sido dadas de alta; así como de una herramienta para la supervisión, el seguimiento y la gestión de las mismas. Tareas que recaerán sobre un administrador perteneciente al Servicio de Abastecimiento.
+Además, se consigue agilizar el proceso de gestion individualizada de incidencias, y el proceso de revisión conjunta de incidencias. Gracias a las capacidades inherentes a poseer una base de datos.
+
+Por todo ello AGIL disminuye la cantidad de trabajo y el tiempo requeridos para hacer frente a la tarea; además de asegurar la atención a las incidencias.
+
 ## Estado del Proyecto
 
 Actualmente el proyecto se encuentra en **fase de desarrollo**.
@@ -39,16 +47,23 @@ Actualmente el proyecto se encuentra en **fase de desarrollo**.
 
 ## Funcionalidades del proyecto
 
-**Pendiente** de aprobación.
+- Acceso desde internet para los usuarios.
+- Compatibilidad con pc, tablet y movil.
+- Compatibilidad con al menos chrome y firefox.
+- Operaciones de creación, lectura, modificación y borrado de incidencias.
+- Generación de una lista de incidencias según su estado.
+- Método para avisar al destinatario de la incidencia según el caso.
+- Sistema de sesión que impida visitar los diferentes módulos de la aplicación sin disponer de credenciales.
+- Diferenciación entre dos tipos de usuarios: básico y administrador.
+- Presencia de diferentes tipos de incidencias, con interacciones únicas para cada una:
+    + Trabajo de limpieza: carga una lista de incumplimientos.
+    + Tratamiento de choque: solicita un trabajo e indica la gravedad.
+    + Modificación de dependencias: indica qué cambio se produce y refleja los metros cuadrados cuando es necesario.
 
 ## Equipo del Proyecto
 - **Scrum Master** y **Product Owner**: Comandante GC D. Ignacio José Morales Molero (Servicio Informática Guardia Civil).
 - **Developer**: Teniente GC D. Pedro Gil Gil.
 - **Developer**: Teniente GC D. Sergio Perea Gutiérrez.
-
-## Preguntas frecuentes
-
-**Pendiente** de desarrollo.
 
 ## Diagrama de clases
 
@@ -58,5 +73,3 @@ Actualmente el proyecto se encuentra en **fase de desarrollo**.
 ## Despliegue en Internet**:
    1. API: 
    2. Web: 
-
-
