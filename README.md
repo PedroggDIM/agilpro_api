@@ -68,8 +68,3 @@ Actualmente el proyecto se encuentra en **fase de desarrollo**.
 ## Diagrama de clases
 
 ![Diagrama](https://git.institutomilitar.com/PedroggDIM/agil/-/wikis/imagenes/DiagramaClases.png)
-
-
-## Despliegue en Internet**:
-   1. API: 
-   2. Web: 
