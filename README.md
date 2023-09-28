@@ -1,4 +1,4 @@
-[![Logo](https://git.institutomilitar.com/PedroggDIM/agil/-/wikis/imagenes/Logo/LogoAgil_M.png)](https://git.institutomilitar.com/PedroggDIM/agil/-/wikis/imagenes/Logo/LogoAgil.png)
+[![Logo](https://git.institutomilitar.com/PedroggDIM/agesil/-/wikis/imagenes/Logo/LogoAgesil_M.png)](https://git.institutomilitar.com/PedroggDIM/agesil/-/wikis/imagenes/Logo/LogoAgesil.png)
 
 # Descripción General
 
@@ -8,19 +8,19 @@ La unidad afectada por una incidencia de limpieza debe rellenar un modelo y remi
 
 Actualmente se sigue este cauce, y las incidencias son anotadas en un documento excel. Pero se ha demostrado que, de esta manera, muchas de las incidencias quedan desatendidas o insuficientemente resueltas; o no han sido debidamente retratadas en el modelo. Por no hablar de la demora a la hora de tratar dichas incidencias y llegar a una solución cuando la empresa no se ha hecho cargo (la frecuencia con que se produzcan reuniones).
 
-AGIL nace como una idea para la gestión de incidencias, diseñada para simplificar el seguimiento y resolución de problemas de limpieza en la DGGC. Los usuarios podrán registrar incidencias en la aplicación cuando la empresa de limpieza no cumpla con los estándares de higiene, la aplicación notificará a la empresa por correo electrónico para tomar medidas y solucionar estos problemas; y los administradores (SABAS) intervendrán solo si no se proporciona una solución o si se verifica que la solución dada no se ha realizado. Dejando obsoletas las actas ya mencionadas.
+AGESIL nace como una idea para la gestión de incidencias, diseñada para simplificar el seguimiento y resolución de problemas de limpieza en la DGGC. Los usuarios podrán registrar incidencias en la aplicación cuando la empresa de limpieza no cumpla con los estándares de higiene, la aplicación notificará a la empresa por correo electrónico para tomar medidas y solucionar estos problemas; y los administradores (SABAS) intervendrán solo si no se proporciona una solución o si se verifica que la solución dada no se ha realizado. Dejando obsoletas las actas ya mencionadas.
 
-AGIL también facilitará la generación de listas de incidencias no resueltas para su revisión y seguimiento. Es decir, el documento excel actual pasaría a no ser necesario, al encargarse la aplicación de reunir los datos de interés.
+AGESIL también facilitará la generación de listas de incidencias no resueltas para su revisión y seguimiento. Es decir, el documento excel actual pasaría a no ser necesario, al encargarse la aplicación de reunir los datos de interés.
 
-Con todo ello se espera reunir la gestión de incidencias en un uńico lugar, simplificar el proceso que una unidad debe seguir al hacer frente a una incidencia, agilizar la gestión y aumentar la eficacia de la misma.
+Con todo ello se espera reunir la gestión de incidencias en un uńico lugar, simplificar el proceso que una unidad debe seguir al hacer frente a una incidencia, agesilizar la gestión y aumentar la eficacia de la misma.
 
 ## Valor aportado
 
-Gracias a la implantación de AGIL, se dispondrá de un sistema donde cualquier integrante de una unidad territorial podrá crear una incidencia relacionada con el servicio de limpieza en su propia unidad.
-AGIL dota a la Guardia Civil de un único espacio donde poder encontrar las diferentes incidencias que hayan sido dadas de alta; así como de una herramienta para la supervisión, el seguimiento y la gestión de las mismas. Tareas que recaerán sobre un administrador perteneciente al Servicio de Abastecimiento.
-Además, se consigue agilizar el proceso de gestion individualizada de incidencias, y el proceso de revisión conjunta de incidencias. Gracias a las capacidades inherentes a poseer una base de datos.
+Gracias a la implantación de AGESIL, se dispondrá de un sistema donde cualquier integrante de una unidad territorial podrá crear una incidencia relacionada con el servicio de limpieza en su propia unidad.
+AGESIL dota a la Guardia Civil de un único espacio donde poder encontrar las diferentes incidencias que hayan sido dadas de alta; así como de una herramienta para la supervisión, el seguimiento y la gestión de las mismas. Tareas que recaerán sobre un administrador perteneciente al Servicio de Abastecimiento.
+Además, se consigue agesilizar el proceso de gestion individualizada de incidencias, y el proceso de revisión conjunta de incidencias. Gracias a las capacidades inherentes a poseer una base de datos.
 
-Por todo ello AGIL disminuye la cantidad de trabajo y el tiempo requeridos para hacer frente a la tarea; además de asegurar la atención a las incidencias.
+Por todo ello AGESIL disminuye la cantidad de trabajo y el tiempo requeridos para hacer frente a la tarea; además de asegurar la atención a las incidencias.
 
 ## Estado del Proyecto
 
@@ -67,4 +67,4 @@ Actualmente el proyecto se encuentra en **fase de desarrollo**.
 
 ## Diagrama de clases
 
-![Diagrama](https://git.institutomilitar.com/PedroggDIM/agil/-/wikis/imagenes/DiagramaClases.png)
+![Diagrama](https://git.institutomilitar.com/PedroggDIM/agesil/-/wikis/imagenes/DiagramaClases.png)
