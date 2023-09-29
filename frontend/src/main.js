@@ -8,7 +8,7 @@ import { loginStore } from "@/stores/loginStore.js"
 // Importar y declarar las vistas
 import Home from "@/components/Home.vue"
 const Bienvenida = () => import('@/components/Bienvenida.vue')
-const NuevaIncidencia = () => import('@/components/NuevaIncidencia.vue')
+const NuevaIncidencia = () => import('@/components/Incidencias/NuevaIncidencia.vue')
 
 // Importar estilos e iconos
 import "bootstrap/dist/css/bootstrap.min.css"

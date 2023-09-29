@@ -12,7 +12,7 @@ import Footer from "@/components/Footer.vue"
       <div class="contenedor-vistas">
         <router-view />
       </div>
-      <div class="footer">
+      <div class="footer fixed-bottom">
         <Footer />
       </div>
     </div>
