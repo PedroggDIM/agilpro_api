@@ -38,7 +38,7 @@ import Footer from "@/components/Footer.vue"
 .footer {
   background-color: var(--color-secundario);
   color: var(--color-primario);
-  padding: 20px 0;
+  padding: 5px 0;
   text-align: center;
 }
 </style>

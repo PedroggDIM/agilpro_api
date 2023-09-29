@@ -17,7 +17,7 @@ export default {
           Este es el texto que explica en que consiste la aplicación.
         </p>
         <p></p>
-        <router-link to="/nuevaPregunta" class="btn-gen btn-bienvenida">Nueva Incidencia</router-link>
+        <router-link to="/nuevaIncidencia" class="btn-gen btn-bienvenida">Nueva Incidencia</router-link>
       </div>
   </div>
 </template>
