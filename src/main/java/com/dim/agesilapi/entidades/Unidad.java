@@ -1,5 +1,7 @@
 package com.dim.agesilapi.entidades;
 
+import java.util.List;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
@@ -7,6 +9,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import net.minidev.json.annotate.JsonIgnore;
 
@@ -18,14 +21,13 @@ public class Unidad {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@JsonIgnore
 	private Long id;
-	private int zona;
+	private String zona;
 	private String nombre;
 	
 	//relación con la entidad Unidad
-	@ManyToOne(fetch=FetchType.LAZY)
-	@JoinColumn(name="UsuarioId")
-	private Usuario usuario;
-
+	@OneToMany(mappedBy = "unidad")
+	List<Usuario> usuarios;
+	
 	public Long getId() {
 		return id;
 	}
@@ -34,11 +36,11 @@ public class Unidad {
 		this.id = id;
 	}
 
-	public int getZona() {
+	public String getZona() {
 		return zona;
 	}
 
-	public void setZona(int zona) {
+	public void setZona(String zona) {
 		this.zona = zona;
 	}
 
@@ -50,17 +52,19 @@ public class Unidad {
 		this.nombre = nombre;
 	}
 
-	public Usuario getUsuario() {
-		return usuario;
+	public List<Usuario> getUsuarios() {
+		return usuarios;
 	}
 
-	public void setUsuario(Usuario usuario) {
-		this.usuario = usuario;
+	public void setUsuarios(List<Usuario> usuarios) {
+		this.usuarios = usuarios;
 	}
 
 	@Override
 	public String toString() {
-		return "Unidad [id=" + id + ", zona=" + zona + ", nombre=" + nombre + ", usuario=" + usuario + "]";
-	}	
+		return "Unidad [id=" + id + ", zona=" + zona + ", nombre=" + nombre + ", usuarios=" + usuarios + "]";
+	}
+
+	
 
 }

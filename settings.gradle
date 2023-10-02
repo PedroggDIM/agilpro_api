@@ -5,4 +5,4 @@ pluginManagement {
 		gradlePluginPortal()
 	}
 }
-rootProject.name = 'agesilapi'
+rootProject.name = 'agesilapi_pro'

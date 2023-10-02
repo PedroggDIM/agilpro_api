@@ -7,11 +7,14 @@ import jakarta.persistence.DiscriminatorColumn;
 import jakarta.persistence.DiscriminatorType;
 import jakarta.persistence.DiscriminatorValue;
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Inheritance;
 import jakarta.persistence.InheritanceType;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
@@ -38,11 +41,14 @@ public class Incidencia {
 		LimpiezaChoque,
 		CambiosDependencia
 	}
-	@OneToMany(mappedBy = "incidencia")
-	List<Usuario> usuarios;
 	
-	@OneToMany(mappedBy = "incidencia")
-	List<Receptor> receptores;
+	@ManyToOne(fetch=FetchType.LAZY)
+	@JoinColumn(name="UsuarioId")
+	Usuario usuario;
+	
+	@ManyToOne(fetch=FetchType.LAZY)
+	@JoinColumn(name="ReceptorId")
+	Receptor receptor;
 	
 	public Categoria getCategoria() {
 		return null;
@@ -99,24 +105,26 @@ public class Incidencia {
 	public void setDescripcion(String descripcion) {
 		this.descripcion = descripcion;
 	}
-	public List<Usuario> getUsuarios() {
-		return usuarios;
+	public Usuario getUsuario() {
+		return usuario;
 	}
-	public void setUsuarios(List<Usuario> usuarios) {
-		this.usuarios = usuarios;
+	public void setUsuario(Usuario usuario) {
+		this.usuario = usuario;
 	}
-	public List<Receptor> getReceptores() {
-		return receptores;
+	public Receptor getReceptor() {
+		return receptor;
 	}
-	public void setReceptores(List<Receptor> receptores) {
-		this.receptores = receptores;
+	public void setReceptor(Receptor receptor) {
+		this.receptor = receptor;
 	}
 	@Override
 	public String toString() {
 		return "Incidencia [id=" + id + ", fechaInicio=" + fechaInicio + ", fechaFin=" + fechaFin + ", numDias="
 				+ numDias + ", estado=" + estado + ", comunicaEmpresa=" + comunicaEmpresa + ", infoAdicio_grabador="
-				+ infoAdicio_grabador + ", descripcion=" + descripcion + ", usuarios=" + usuarios + ", receptores="
-				+ receptores + "]";
+				+ infoAdicio_grabador + ", descripcion=" + descripcion + ", usuario=" + usuario + ", receptor="
+				+ receptor + "]";
 	}
 
+	
+	
 }

@@ -23,23 +23,21 @@ public class Usuario {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@JsonIgnore
 	private Long id;
-	private int id_unidad;
 	private String correo;
 	private String contrasenia;
-	private int tip;
+	private String tip;
 	public static enum UsuarioRol {
 		Grabador,
 		Administrador
 	}
-	private UsuarioRol estado = UsuarioRol.Grabador;
+	private UsuarioRol usuarioRol = UsuarioRol.Grabador;
+	
+//	@OneToMany(mappedBy = "usuario")
+//	List<Incidencia> incidencias;
 	
 	@ManyToOne(fetch=FetchType.LAZY)
-	@JoinColumn(name="IncidenciaId")
-	private Incidencia incidencia;
-	
-	// de entidad Unidad
-	@OneToMany(mappedBy = "usuario")
-	List<Unidad> unidades;
+	@JoinColumn(name="UnidadId")
+	Unidad unidad;
 	
 
 	public Long getId() {
@@ -50,13 +48,7 @@ public class Usuario {
 		this.id = id;
 	}
 
-	public int getId_unidad() {
-		return id_unidad;
-	}
-
-	public void setId_unidad(int id_unidad) {
-		this.id_unidad = id_unidad;
-	}
+	
 
 	public String getCorreo() {
 		return correo;
@@ -74,35 +66,44 @@ public class Usuario {
 		this.contrasenia = contrasenia;
 	}
 
-	public int getTip() {
+	public String getTip() {
 		return tip;
 	}
 
-	public void setTip(int tip) {
+	public void setTip(String tip) {
 		this.tip = tip;
 	}
 
-	public UsuarioRol getEstado() {
-		return estado;
+	public UsuarioRol getUsuarioRol() {
+		return usuarioRol;
 	}
 
-	public void setEstado(UsuarioRol estado) {
-		this.estado = estado;
+	public void setUsuarioRol(UsuarioRol estado) {
+		this.usuarioRol = usuarioRol;
 	}
 
-	public Incidencia getIncidencia() {
-		return incidencia;
+//	public List<Incidencia> getIncidencias() {
+//		return incidencias;
+//	}
+//
+//	public void setIncidencias(List<Incidencia> incidencias) {
+//		this.incidencias = incidencias;
+//	}
+
+	public Unidad getUnidad() {
+		return unidad;
 	}
 
-	public void setIncidencia(Incidencia incidencia) {
-		this.incidencia = incidencia;
+	public void setUnidad(Unidad unidad) {
+		this.unidad = unidad;
 	}
 
-	@Override
-	public String toString() {
-		return "Usuario [id=" + id + ", id_unidad=" + id_unidad + ", correo=" + correo + ", contrasenia=" + contrasenia
-				+ ", tip=" + tip + ", estado=" + estado + ", incidencia=" + incidencia + "]";
-	}
+//	@Override
+//	public String toString() {
+//		return "Usuario [id=" + id + ", id_unidad=" + id_unidad + ", correo=" + correo + ", contrasenia=" + contrasenia
+//				+ ", tip=" + tip + ", estado=" + estado + ", incidencias=" + incidencias + ", unidad=" + unidad + "]";
+//	}
+
 	
 
 }
