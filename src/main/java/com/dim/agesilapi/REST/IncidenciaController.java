@@ -22,7 +22,7 @@ import com.dim.agesilapi.entidades.Incidencia.Categoria;
 import com.dim.agesilapi.entidades.LimpiezaChoque;
 import com.dim.agesilapi.repositorios.IncidenciaRepositorio;
 
-@CrossOrigin(origins = "*", methods = { RequestMethod.GET, RequestMethod.POST })
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/incidencias")
 public class IncidenciaController {
@@ -99,7 +99,6 @@ public class IncidenciaController {
 	}
 
 }
-
 	
 
 
