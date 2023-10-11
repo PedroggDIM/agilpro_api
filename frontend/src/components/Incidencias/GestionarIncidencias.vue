@@ -112,7 +112,6 @@ export default {
 
   </div>
 </template>
-
 <style>
 .ancho {
   width: 95%;

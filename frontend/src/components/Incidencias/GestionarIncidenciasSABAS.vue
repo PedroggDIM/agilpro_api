@@ -45,6 +45,8 @@ export default {
         { data: 'categoria' },
         { data: 'descripcion' },
         { data: 'infoAdicio_grabador' },
+        { data: 'unidad' },
+        { data: 'zona' },
 
       ],
 
@@ -72,7 +74,7 @@ export default {
     <Navbar />
   </div>
   <h5>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Gestión y reportes de incidencias</h5>
-
+  
   <div class="row">
     <div class="ancho">
       <div class="table-responsive">
@@ -97,6 +99,8 @@ export default {
               <th>Categoria</th>
               <th>Descripción</th>
               <th>Actualizaciones</th>
+              <th>Unidad</th>
+              <th>Zona</th>
 
 
 
