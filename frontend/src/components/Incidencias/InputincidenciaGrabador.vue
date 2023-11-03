@@ -116,7 +116,47 @@ export default {
                 <button type="button" class="btn btn-warning btn-sm" @click="editarIncidencia(incidencia)">Enviar a SABAS/Editar</button>
               </td>
  <!--/////////////////////////// Contenido de la ventana emergente ///////////////////////////-->
-
+              <transition name="fade">
+                <div v-if="incidencia.showPopup" class="pop-up">
+                  <button type="button" class="btn btn-secondary" @click="closePopUp(incidencia)">Cerrar</button>  
+                  <div class="pop-up-inner">
+                    <p class="mb-0"><strong>Zona: </strong>{{ incidencia.zona }}</p>
+                    <p class="mb-0"><strong>Unidad: </strong>{{ incidencia.unidad }}</p>
+                    <p class="mb-0"><strong>Fecha inicio incidencia: </strong>{{ formatDate(incidencia.fechaInicio) }}</p>
+                    <p class="mb-0"><strong>Fecha de comunicación a la empresa responsable: </strong>{{
+                      formatDate(incidencia.comunicaEmpresa) }}</p>
+                    <p class="mb-0"><strong>Fecha resolución: </strong>{{ formatDate(incidencia.fechaFin) }}</p>
+                    <p class="mb-0"><strong>Duración en días: </strong>{{ incidencia.numDias }}</p>
+                    <p class="mb-0"><strong>Estado: </strong>{{ incidencia.estado }}</p>                     
+                    <p class="mb-0"><strong>Categoria: </strong>{{ incidencia.categoria }}</p>            
+                    <div v-if="incidencia.categoria === 'DeficienciaServicio'">
+                      <div class="container-fluid incumplimiento">
+                        <h5>Incumplimientos:</h5>
+                        <ul>
+                          <li v-for="(item, index) in incidencia.incumplimiento" :key="index">{{ item }}</li>
+                        </ul>
+                      </div>
+                    </div>            
+                    <div v-if="incidencia.categoria === 'LimpiezaChoque'">
+                      <div class="container-fluid LimpiezaChoque">                        
+                        Tipo de choque: {{ incidencia.tipoChoque }}<br>
+                        Gravedad: {{ incidencia.gravedad }}
+                      </div>
+                    </div>            
+                    <div v-if="incidencia.categoria === 'CambiosDependencia'">
+                      <div class="container-fluid LimpiezaChoque">
+                        <h5>Cambios en las dependencias oficiales:</h5>
+                        Tipo de cambio: {{ incidencia.tipoCambio }}<br>
+                        Dependencias afectadas: {{ incidencia.tipoDependencia }}<br>
+                        Superficie afectada en metros: {{ incidencia.metrosCuadrados }}
+                      </div>
+                    </div>
+                    <p class="mb-0"><strong>Descripción: </strong>{{ incidencia.descripcion }}</p>
+                    <p class="mb-0"><strong>Información adicional añadida por el grabador: </strong>{{
+                      incidencia.infoAdicio_grabador }}</p>                   
+                  </div>
+                </div>
+              </transition> 
             </tr>
           </tbody>
           

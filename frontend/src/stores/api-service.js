@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const host = "http://localhost:8080/api";
+//const host = "http://localhost:8080/api";
+const host = "https://agilproapi-uw6zo9mj.b4a.run/api";
 
 export function cambiarHttpPorHttps(enlace) {
   return enlace.replace("http", "https");
