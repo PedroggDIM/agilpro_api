@@ -74,6 +74,7 @@ export default {
 .container {
   text-align: center;
   padding-top: 20px;
+ 
 }
 
 .card {
