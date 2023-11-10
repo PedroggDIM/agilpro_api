@@ -42,8 +42,8 @@ export default {
       console.log(fechaInicioStr)
       console.log(fechaFinStr)
       await this.getEstadisticasPorParametro(this.estado, fechaInicioStr, fechaFinStr);
-     // console.log(this.numIncidencias)
-     // console.log("Incidencias:" + this.numIncidencias);
+      // console.log(this.numIncidencias)
+      // console.log("Incidencias:" + this.numIncidencias);
     },
   },
 }
@@ -93,7 +93,7 @@ export default {
 
             <div>
               <h3>Estadísticas de Incidencias</h3>
-              <p>Número de incidencias: {{ this.numIncidencias }}</p>
+              <p>Número de incidencias: {{ numIncidencias }}</p>
             </div>
 
           </div>
@@ -117,3 +117,4 @@ export default {
   border-radius: 10px;
 }
 </style>
+

@@ -22,7 +22,8 @@ const GestionarInciSabas = () =>
   import("@/components/Incidencias/GestionarInciSabas.vue");
 const ReportesSabas = () =>
   import("@/components/Incidencias/ReportesSabas.vue");
-
+const EditaincidenSabas = () =>
+  import("@/components/Incidencias/EditaincidenSabas.vue");
 const Estadistica = () => import("@/components/Incidencias/Estadistica.vue");
 const NotFound = () => import("@/components/NotFound.vue");
 
@@ -54,7 +55,12 @@ const routes = [
     name: "GestionarInciSabas",
     component: GestionarInciSabas,
   },
-  
+  {
+   // path: "/EditaincidenSabas/:id/:zona/:unidad/:fechaInicio/:fechaFin/:numDias/:estado/:comunicaEmpresa/:categoria",
+    path: "/EditaincidenSabas/:incidencia",
+    name: "EditaincidenSabas",
+    component: EditaincidenSabas,
+  },
   { path: "/ReportesSabas", name: "ReportesSabas", component: ReportesSabas },
   { path: "/Estadistica", name: "Estadistica", component: Estadistica },
   { path: "/:pathMatch(.*)*", name: "NotFound", component: NotFound },
