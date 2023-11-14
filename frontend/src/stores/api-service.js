@@ -1,7 +1,7 @@
 import axios from "axios";
 
-//const host = "http://localhost:8080/api";
-const host = "https://agilproapi-uw6zo9mj.b4a.run/api";
+// const host = "http://localhost:8080/api";
+ const host = "https://agilproapi-uw6zo9mj.b4a.run/api";
 
 export function cambiarHttpPorHttps(enlace) {
   return enlace.replace("http", "https");
@@ -20,6 +20,7 @@ export function llamadaApi(path, method, body) {
   }
   return axios.request(config)
 }
+
 export function guardarIncidencia(incidencia) {
   // debugger;
   console.log(incidencia)
@@ -50,5 +51,15 @@ export function getEstadisticasPorParametroApi(estadoValor, fechaInicioValor, fe
  return llamadaApi(`${host}/incidencias/obtenerNumeroIncidencias?estado=${estadoValor}&fechaInicio=${fechaInicioValor}&fechaFin=${fechaFinValor}`, 'get', null)
 }
 
+export function borrarIncidencia(incidencia) {
+  console.log('en api-service' +JSON.stringify(incidencia))
+  console.log('en api-service' +incidencia )
+  
+  return llamadaApi(cambiarHttpPorHttps(incidencia._links.self.href), "delete");
+  
+}
 
+export function getDemarcaciones() {
+  return llamadaApi(`${host}/receptores`, 'get');
+}
 

@@ -6,6 +6,8 @@ import Navbar from "@/components/Navbar.vue"
 import { mapActions, mapState } from 'pinia'
 import { incidenciasStore } from '@/stores/incidencias.js';
 
+import { borrarIncidencia } from "@/stores/api-service.js";
+
 import moment from "moment";
 import { ref } from 'vue'; 
 import 'primevue/resources/primevue.min.css'; // Estilo de PrimeVue
@@ -76,7 +78,28 @@ export default {
     }
     },
 
+    borrarIncidenciaSabas(incidencia) { 
+      console.log(incidencia)   
+      if (confirm("¿Estás seguro de que deseas borrar la incidencia?")) {
 
+        this.eliminarIncidencia(incidencia).then((r) => {
+          console.log('aquí' + incidencia)
+        if (r.data) {
+          let eliminado = false;
+          for (let i = 0; i < this.incidencias.length && !eliminado; i++) {
+            let incidenciaAux = this.incidencias[i];
+            if (incidenciaAux.id === incidencia.id) {
+              eliminado = true;
+              this.incidencias.splice(i, 1);
+            }
+          }
+        }
+        
+      });
+        
+      }     
+
+    },
   }
 }
 </script>
@@ -139,7 +162,9 @@ export default {
                 </router-link>
  
               </td>
-
+              <td>
+                <button type="button" class="btn btn-warning btn-sm" @click="borrarIncidenciaSabas(incidencia)">Eliminar</button>
+              </td>
  <!--/////////////////////////// Contenido de la ventana emergente ///////////////////////////-->
               <transition name="fade">
                 <div v-if="incidencia.showPopup" class="pop-up">
