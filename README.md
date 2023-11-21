@@ -19,6 +19,7 @@ Con todo ello se espera reunir la gestión de incidencias en un uńico lugar, si
 Gracias a la implantación de AGESIL, se dispondrá de un sistema donde cualquier integrante de una unidad territorial podrá crear una incidencia relacionada con el servicio de limpieza en su propia unidad.
 AGESIL dota a la Guardia Civil de un único espacio donde poder encontrar las diferentes incidencias que hayan sido dadas de alta; así como de una herramienta para la supervisión, el seguimiento y la gestión de las mismas. Tareas que recaerán sobre un administrador perteneciente al Servicio de Abastecimiento.
 Además, se consigue agesilizar el proceso de gestion individualizada de incidencias, y el proceso de revisión conjunta de incidencias. Gracias a las capacidades inherentes a poseer una base de datos.
+AGESIL implementa un formato único y estandarizado para recoger las incidencais, por lo que se eliminan los errores provenientes de documentos dispares (Anteriormente en forma de modelos word, tablas excel o cuerpos de correo electrónico). Mediante procedimientos de validación de campos, también se asegura que las incidencias estén completa y debidamente rellenas, con los datos adecuados.
 
 Por todo ello AGESIL disminuye la cantidad de trabajo y el tiempo requeridos para hacer frente a la tarea; además de asegurar la atención a las incidencias.
 
