@@ -209,6 +209,13 @@ export default {
       }
       return valid;
     },
+    formatDate(date) {
+      if (date) {
+        return moment(date).format("DD-MM-YYYY"); // Formatea la fecha si no es null
+      } else {
+        return "No finalizada"; // Muestra "No finalizada" si la fecha es null
+      }
+    },
   },
   created() {
     debugger;
@@ -224,7 +231,7 @@ export default {
     <Navbar />
   </div>
   <div class="container-fluid ancho">
-    <h3 class="titulo">Formulario de edición de incidencias<p class="unidad"> {{ incidencia.unidad }}</p>
+    <h3 class="titulo">Consulta y edición de incidencias<p class="unidad"> {{ incidencia.unidad }}</p>
     </h3>
     <div class="row mt-3">
       <div class="col">

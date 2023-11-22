@@ -79,7 +79,7 @@ export default {
               </li>
               <li class="dropdown-divider" v-if="dataSession">{{ dataSession.correo }}</li>
               <li class="dropdown-item">
-                <button class="btn btn-link" @click="cerrarSesionNav()">Cerrar Sesión</button>
+                <!-- <button class="btn btn-link" @click="cerrarSesionNav()">Cerrar Sesión</button> -->
               </li>
             </ul>
           </li>

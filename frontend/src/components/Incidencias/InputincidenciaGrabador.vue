@@ -62,7 +62,7 @@ export default {
     },
     formatDate(date) {
       if (date) {
-        return moment(date).format("YYYY-MM-DD"); // Formatea la fecha si no es null
+        return moment(date).format("DD-MM-YYYY"); // Formatea la fecha si no es null
       } else {
         return "No finalizada";
       }

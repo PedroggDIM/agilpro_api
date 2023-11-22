@@ -69,7 +69,7 @@ export default {
     },
     formatDate(date) {
       if (date) {
-        return moment(date).format("YYYY-MM-DD"); // Formatea la fecha si no es null
+        return moment(date).format("DD-MM-YYYY"); // Formatea la fecha si no es null
       } else {
         return "No finalizada"; // Muestra "No finalizada" si la fecha es null
       }
@@ -176,8 +176,8 @@ export default {
               <tr>
                 <th scope="col">Núm:</th>
                 <th scope="col">Unidad</th>
-                <th scope="col">Inicio</th>
-                <th scope="col">Comunica</th>
+                <th scope="col">Fecha Inicio</th>
+                <th scope="col">Fecha Comunica</th>
                 <th scope="col">Estado</th>
                 <th scope="col">Tipo </th>
                 <th scope="col">Descripción</th>

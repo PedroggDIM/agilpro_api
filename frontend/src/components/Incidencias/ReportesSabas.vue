@@ -64,7 +64,7 @@ export default {
     },
     formatDate(date) {
       if (date) {
-        return moment(date).format("YYYY-MM-DD"); // Formatea la fecha si no es null
+        return moment(date).format("DD-MM-YYYY"); // Formatea la fecha si no es null
       } else {
         return "No finalizada"; // Muestra "No finalizada" si la fecha es null
       }
@@ -94,10 +94,10 @@ export default {
           <thead>
             <tr>
               <th></th>
-              <th>Número</th>
-              <th>Conocimiento Empresa</th>
+              <th>Nº</th>
+              <th>Conocimiento Empresa (dd/mm/aaaa)</th>
               <th>Fecha de inicio</th>
-              <th>Fecha de fin</th>
+              <th>Fecha de finalización</th>
               <th>Días</th>
               <th>Estado</th>
 
